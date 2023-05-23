@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "author": "Simone Gallo & ChatGPT",
+  "name": "Prompt Lib",
+  "version": "1.0",
+  "description": "A Chrome plugin for storing LLM prompts.",
+  "permissions": ["tabs", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Prompt Lib"
+  },
+  "icons": {
+    "16": "icon16.png"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prompt Lib</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="tab-container">
+    <div class="tab" id="new-tab">New Prompt</div>
+    <div class="tab" id="saved-tab">Saved Prompts</div>
+  </div>
+  <div id="new-prompt-card" class="card active">
+    <h2>New Prompt</h2>
+    <div class="input-container">
+      <label for="title">Title</label>
+      <input type="text" id="title" />
+    </div>
+    <div class="input-container">
+      <label for="model">Model</label>
+      <input type="text" id="model" />
+    </div>
+    <div class="input-container">
+      <label for="prompt">Prompt</label>
+      <textarea id="prompt"></textarea>
+    </div>
+    <button id="save-btn">Save</button>
+    <div id="displayed-prompt"></div>
+  </div>
+  <div id="saved-prompts-card" class="card">
+    <h2>Saved Prompts</h2>
+    <ul id="saved-list"></ul>
+  </div>
+  
+
+  <!-- Modal for prompt deletion confirmation -->
+  <div id="delete-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Are you sure you want to delete this prompt?</p>
+      <div class="btn-group">
+        <button id="delete-confirm" class="delete-btn">Delete</button>
+        <button id="delete-cancel" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
