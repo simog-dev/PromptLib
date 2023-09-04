@@ -1,7 +1,7 @@
 # Prompt Lib (Chrome Plugin)
 
 ## Overview
- TBW
+ A straightforward Chrome plugin for storing prompts.
 
 ## Installation
 TBW
@@ -10,9 +10,9 @@ TBW
 TBW
 
 ## TODO
-
+- Add "edit" functionality
 - Add search in "saved prompts"
-- Add most common prompts
+- Add a list of the most common prompts
 
 ## Contributing
 
